@@ -1,0 +1,34 @@
+{
+  "warcaster" : [
+    {
+      "name":"Borka Kegslayer",
+      "wjpoints":7,
+      "limit": 1
+    },
+    {
+      "name":"Calandra Truthsayer",
+      "wjpoints":4,
+      "limit": 1
+    }
+  ],
+  "warjacks": [
+    {
+      "name":"Dire Troll Blitzer",
+      "pointcost": 13,
+      "limit": 0
+    },
+    {
+      "name":"Dire Troll Bomber",
+      "pointcost": 7,
+      "limit": 0
+    }
+  ],
+  "units": [
+    {
+      "name":"Kriel Warriors",
+      "pointcostmin": 4,
+      "pointcostmax": 6,
+      "limit": 3
+    }
+  ]
+}
