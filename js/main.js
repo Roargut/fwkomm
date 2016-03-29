@@ -6,11 +6,11 @@ const HOFACTIONS = ["Trollbloods", "Skorne", "Minions", "Circle", "Legion"];
 
 
 $("#systemList li a").click(function() {
-    $(this).parents(".btn-group").find("#system").html($(this).text());
+    //$(this).parents(".btn-group").find("#system").html($(this).text());
+    console.log(this);
+    $("#system").html($(this).text());
     $("#factionList").empty();
-});
 
-$("#faction").click(function() {
     var sysSelected = $("#system").text();
 
     if (sysSelected == "Warmachine") {
@@ -21,10 +21,24 @@ $("#faction").click(function() {
         for (x in HOFACTIONS)
             $("#factionList").append("<li><a href='#'>" + HOFACTIONS[x] + "</a></li>");
     }
+    $("#factionList li a").click(function() {
+    //$(this).parents(".btn-group").find("#faction").html($(this).text());
+        console.log(this);
+        $("#faction").html($(this).text());
+    })
 });
 
+$("#pointlimitList li a").click(function(){
+    $("#pointlimit").html($(this).text());
+});
 
-
-
-
-    
+$("#commit").click(function(){
+    var data = $("#faction").html;
+    $.ajax({
+        dataType: "json",
+        url: "http://localhost",
+        data: data,
+        success: success
+    });
+    //$("#armytable table")
+})
