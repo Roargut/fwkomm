@@ -17,8 +17,12 @@
     <li role="presentation"><a href="login.html">Login</a></li>
 </ul>
 
-<div class="container" id="selection">
+<div class="container">
     <button type="button" class="btn btn-default" data-toggle="modal" data-target="#popupWindow">new Army</button>
+</div>
+
+<div class="container" id="selection">
+
     <div class="modal fade" id="popupWindow" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -31,36 +35,33 @@
                 <div class="modal-body">
                     <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
                         <div class="btn-group" role="group">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select System<span class="caret"></span>
-                            </button>
-                            <ul id="system" class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop2">
-                                <li id="wm"><a href="#">Warmachine</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li id="ho"><a href="#">Hordes</a></li>
+                            <button id="system" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select System</button>
+                            <ul id="systemList" class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop2">
+                                <li><a href="#">Warmachine</a></li>
+                                <li><a href="#">Hordes</a></li>
                             </ul>
                         </div>
 
                         <div class="btn-group" role="group">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Faction<span class="caret"></span>
+                            <button id="faction" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Faction
                             </button>
-                            <ul id="faction" class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop3">
-
+                            <ul id="factionList" class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop3">
                             </ul>
                         </div>
 
                         <div class="btn-group" role="group">
-                            <button id="tierlist" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Tierlist<span class="caret"></span>
+                            <button id="tierlist" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Tierlist
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop4">
+                            <ul id="tierlistList" class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop4">
                                 <li><a href="#">Dropdown link</a></li>
                                 <li><a href="#">Dropdown link</a></li>
                             </ul>
                         </div>
 
                         <div class="btn-group" role="group">
-                            <button id="pointlimit" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Pointsize<span class="caret"></span>
+                            <button id="pointlimit" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Pointsize
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop4">
+                            <ul id="pointlimitList" class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop4">
                                 <li><a href="#">Dropdown link</a></li>
                                 <li><a href="#">Dropdown link</a></li>
                             </ul>
