@@ -7,6 +7,7 @@ const HOFACTIONS = ["Trollbloods", "Skorne", "Minions", "Circle", "Legion"];
 
 $("#systemList li a").click(function() {
     $(this).parents(".btn-group").find("#system").html($(this).text());
+    $("#factionList").empty();
 });
 
 $("#faction").click(function() {
@@ -19,7 +20,6 @@ $("#faction").click(function() {
     else if (sysSelected == "Hordes") {
         for (x in HOFACTIONS)
             $("#factionList").append("<li><a href='#'>" + HOFACTIONS[x] + "</a></li>");
-
     }
 });
 
