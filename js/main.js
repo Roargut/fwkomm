@@ -7,7 +7,6 @@ const HOFACTIONS = ["Trollbloods", "Skorne", "Minions", "Circle", "Legion"];
 
 $("#systemList li a").click(function() {
     //$(this).parents(".btn-group").find("#system").html($(this).text());
-    console.log(this);
     $("#system").html($(this).text());
     $("#factionList").empty();
 
@@ -23,7 +22,6 @@ $("#systemList li a").click(function() {
     }
     $("#factionList li a").click(function() {
     //$(this).parents(".btn-group").find("#faction").html($(this).text());
-        console.log(this);
         $("#faction").html($(this).text());
     })
 });
@@ -32,13 +30,17 @@ $("#pointlimitList li a").click(function(){
     $("#pointlimit").html($(this).text());
 });
 
-$("#commit").click(function(){
-    var datasource = $("#faction").html;
-    $.getJSON({
-        url: "file:///C:/Users/RG/WebstormProjects/fwkomm/data/"+datasource+".json",
-        data: data,
-        success: success
-    });
+$("#commit").click(function() {
+    var dataFile = $("#faction").html();
+    $.getJSON("data/" + dataFile.toLowerCase() + ".json", function (data) {
+        var items = [];
+        $.each(data, function (key, val) {
+            items.push("<td>" + val + "</td>");
+        });
+        $("#armytab").appendTo(items);
+    })
+});
+
     //$("#armytable table")
     //file:///C:/Users/RG/WebstormProjects/fwkomm/data/khador.json
-})
+
