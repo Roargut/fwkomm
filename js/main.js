@@ -33,12 +33,12 @@ $("#pointlimitList li a").click(function(){
 });
 
 $("#commit").click(function(){
-    var data = $("#faction").html;
-    $.ajax({
-        dataType: "json",
-        url: "http://localhost",
+    var datasource = $("#faction").html;
+    $.getJSON({
+        url: "file:///C:/Users/RG/WebstormProjects/fwkomm/data/"+datasource+".json",
         data: data,
         success: success
     });
     //$("#armytable table")
+    //file:///C:/Users/RG/WebstormProjects/fwkomm/data/khador.json
 })
