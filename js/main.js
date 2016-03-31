@@ -33,14 +33,27 @@ $("#pointlimitList li a").click(function(){
 $("#commit").click(function() {
     var dataFile = $("#faction").html();
     $.getJSON("data/" + dataFile.toLowerCase() + ".json", function (data) {
-        var items = [];
+        var itemCaster = [];
+        var itemWarjacks = [];
+        var itemUnits = [];
+        var itemSolos = [];
+        //var itemAttachments = [];
         $.each(data.warcaster, function (key, val) {
-            items.push("<tr><td>" + val.name + "</td><td>" + val.wjpoints + "</td></tr>");
-        });
-        for(i in items) {
-            console.log(items[i]);
-        }
-        $("#armytab").append(items);
+            itemCaster.push("<tr><td>" + val.name + "</td><td>" + val.wjpoints + "</td></tr>");
+        })
+        $.each(data.warjacks, function (key, val) {
+            itemWarjacks.push("<tr><td>" + val.name + "</td><td>" + val.pointcost + "</td></tr>");
+        })
+        $.each(data.units, function (key, val) {
+            itemUnits.push("<tr><td>" + val.name + "</td><td>" + val.pointcostmin + "</td></tr>");
+        })
+        $.each(data.solos, function (key, val) {
+            itemSolos.push("<tr><td>" + val.name + "</td><td>" + val.pointcost + "</td></tr>");
+        })
+        $("#casterTab").append(itemCaster);
+        $("#warjackTab").append(itemWarjacks);
+        $("#unitTab").append(itemUnits);
+        $("#soloTab").append(itemSolos);
     })
 });
 
