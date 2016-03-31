@@ -1,283 +1,76 @@
 {
-  "warcaster" : [
-    {
-      "name": "Butcher",
-      "wjpoints": 6,
-      "limit": 1
-    },
-    {
-      "name": "Harkevich",
-      "wjpoints": 6,
-      "limit": 1
-    },
-    {
-      "name": "Irusk",
-      "wjpoints": 6,
-      "limit": 1
-    },
-    {
-      "name": "Karchev",
-      "wjpoints": 5,
-      "limit": 1
-    },
-    {
-      "name": "Old Witch",
-      "wjpoints": 3,
-      "limit": 1
-    },
-    {
-      "name": "Sorscha",
-      "wjpoints": 5,
-      "limit": 1
-    },
-    {
-      "name": "Strakhov",
-      "wjpoints": 6,
-      "limit": 1
-    },
-    {
-      "name": "Vladimir",
-      "wjpoints": 5,
-      "limit": 1
-    },
-    {
-      "name": "Zerkova",
-      "wjpoints": 6,
-      "limit": 1
-    },
+  "warcaster": [{"name": "Butcher","wjpoints": 6, "limit": 1},
+    {"name": "Harkevich","wjpoints": 6,"limit": 1},
+    {"name": "Irusk","wjpoints": 6,"limit": 1},
+    {"name": "Karchev","wjpoints": 5,"limit": 1},
+    {"name": "Old Witch","wjpoints": 3,"limit": 1},
+    {"name": "Sorscha","wjpoints": 5,"limit": 1},
+    {"name": "Strakhov","wjpoints": 6,"limit": 1},
+    {"name": "Vladimir","wjpoints": 5,"limit": 1},
+    {"name": "Zerkova","wjpoints": 6,"limit": 1}
   ],
-
-  "warjacks": [
-    {
-      "name": "Beast09",
-      "pointcost": 13,
-      "limit": 1
-    },
-    {
-      "name": "Behemoth",
-      "pointcost": 7,
-      "limit": 1
-    },
-    {
-      "name": "Berserker",
-      "pointcost": 6,
-      "limit": 0
-    },
-    {
-      "name": "Black Ivan",
-      "pointcost": 10,
-      "limit": 1
-    },
-    {
-      "name": "Conquest",
-      "pointcost": 19,
-      "limit": 2
-    },
-    {
-      "name": "Decimator",
-      "pointcost": 9,
-      "limit": 0
-    },
-    {
-      "name": "Demolisher",
-      "pointcost": 9,
-      "limit": 0
-    },
-    {
-      "name": "Destroyer",
-      "pointcost": 9,
-      "limit": 0
-    },
-    {
-      "name": "Devastator",
-      "pointcost": 9,
-      "limit": 0
-    },
-    {
-      "name": "Drago",
-      "pointcost": 8,
-      "limit": 1
-    },
-    {
-      "name": "Grolar",
-      "pointcost": 9,
-      "limit": 0
-    },
-    {
-      "name": "Juggernaut",
-      "pointcost": 7,
-      "limit": 0
-    },
-    {
-      "name": "Kodiak",
-      "pointcost": 8,
-      "limit": 0
-    },
-    {
-      "name": "Mad Dog",
-      "pointcost": 5,
-      "limit": 0
-    },
-    {
-      "name": "Marauder",
-      "pointcost": 7,
-      "limit": 0
-    },
-    {
-      "name": "Rager",
-      "pointcost": 6,
-      "limit": 0
-    },
-    {
-      "name": "Ruin",
-      "pointcost": 10,
-      "limit": 1
-    },
-    {
-      "name": "Spriggan",
-      "pointcost": 10,
-      "limit": 0
-    },
-    {
-      "name": "Torch",
-      "pointcost": 10,
-      "limit": 1
-    },
-    {
-      "name": "Victor",
-      "pointcost": 18,
-      "limit": 2
-    }
-
+  "warjacks": [{"name": "Beast09","pointcost": 13,"limit": 1},
+    {"name": "Behemoth","pointcost": 7,"limit": 1},
+    {"name": "Berserker","pointcost": 6,"limit": 0},
+    {"name": "Black Ivan","pointcost": 10,"limit": 1},
+    {"name": "Conquest","pointcost": 19,"limit": 2},
+    {"name": "Decimator","pointcost": 9,"limit": 0},
+    {"name": "Demolisher","pointcost": 9,"limit": 0},
+    {"name": "Destroyer","pointcost": 9,"limit": 0},
+    {"name": "Devastator","pointcost": 9,"limit": 0},
+    {"name": "Drago","pointcost": 8,"limit": 1},
+    {"name": "Grolar","pointcost": 9,"limit": 0},
+    {"name": "Juggernaut","pointcost": 7,"limit": 0},
+    {"name": "Kodiak","pointcost": 8,"limit": 0},
+    {"name": "Mad Dog","pointcost": 5,"limit": 0},
+    {"name": "Marauder","pointcost": 7,"limit": 0},
+    {"name": "Rager","pointcost": 6,"limit": 0},
+    {"name": "Ruin","pointcost": 10,"limit": 1},
+    {"name": "Spriggan","pointcost": 10,"limit": 0},
+    {"name": "Torch","pointcost": 10,"limit": 1},
+    {"name": "Victor","pointcost": 18,"limit": 2}
   ],
-
-  "units": [
-    {
-      "name": "Assault Kommandos",
-      "pointcostmin": 5,
-      "pointcostmax": 8,
-      "limit": 2
-    },
-    {
-      "name": "Battle Mechaniks",
-      "pointcostmin": 2,
-      "pointcostmax": 3,
-      "limit": 3
-    },
-    {
-      "name": "Doom Reavers",
-      "pointcostmin": 6,
-      "pointcostmax": null,
-      "limit": 2
-    },
-    {
-      "name": "Great Bears of Gallowswood",
-      "pointcostmin": 5,
-      "pointcostmax": null,
-      "limit": 1
-    },
-    {
-      "name": "Greylord Outriders",
-      "pointcostmin": 6,
-      "pointcostmax": 9,
-      "limit": 1
-    },
-    {
-      "name": "Greylord Ternion",
-      "pointcostmin": 4,
-      "pointcostmax": null,
-      "limit": 3
-    },
-    {
-      "name": "Iron Fang Pikemen",
-      "pointcostmin": 5,
-      "pointcostmax": 8,
-      "limit": 2
-    },
-    {
-      "name": "Iron Fang Uhlans",
-      "pointcostmin": 7,
-      "pointcostmax": 11,
-      "limit": 1
-    },
-    {
-      "name":"Kayazy Assassins",
-      "pointcostmin": 5,
-      "pointcostmax": 8,
-      "limit": 2
-    },
-    {
-      "name":"Kayazy Eliminators",
-      "pointcostmin": 3,
-      "pointcostmax": null,
-      "limit": 2
-    },
-    {
-      "name":"Kossite Woodsmen",
-      "pointcostmin": 4,
-      "pointcostmax": 6,
-      "limit": 2
-    },
-    {
-      "name":"Man-o-war Bombardiers",
-      "pointcostmin": 7,
-      "pointcostmax": 11,
-      "limit": 1
-    },
-    {
-      "name":"Man-o-war Demolition Corps",
-      "pointcostmin": 6,
-      "pointcostmax": 9,
-      "limit": 3
-    },
-    {
-      "name":"Man-o-war Shocktroopers",
-      "pointcostmin": 6,
-      "pointcostmax": 9,
-      "limit": 3
-    },
-    {
-      "name":"Widowmakers",
-      "pointcostmin": 4,
-      "pointcostmax": null,
-      "limit": 1
-    },
-    {
-      "name":"Winterguard Fieldgun Crew",
-      "pointcostmin": 2,
-      "pointcostmax": null,
-      "limit": 2
-    },
-    {
-      "name":"Winterguard Infantry",
-      "pointcostmin": 4,
-      "pointcostmax": 6,
-      "limit": 3
-    },
-    {
-      "name":"Winterguard Mortar Crew",
-      "pointcostmin": 3,
-      "pointcostmax": null,
-      "limit": 2
-    },
-    {
-      "name":"Winterguard Rifle Corps",
-      "pointcostmin": 5,
-      "pointcostmax": 8,
-      "limit": 3
-    }
+  "units": [{"name": "Assault Kommandos","pointcostmin": 5,"pointcostmax": 8,"limit": 2},
+    {"name": "Battle Mechaniks","pointcostmin": 2,"pointcostmax": 3,"limit": 3},
+    {"name": "Doom Reavers","pointcostmin": 6,"pointcostmax": null,"limit": 2},
+    {"name": "Great Bears of Gallowswood","pointcostmin": 5,"pointcostmax": null,"limit": 1},
+    {"name": "Greylord Outriders","pointcostmin": 6,"pointcostmax": 9,"limit": 1},
+    {"name": "Greylord Ternion","pointcostmin": 4,"pointcostmax": null,"limit": 3},
+    {"name": "Iron Fang Pikemen","pointcostmin": 5,"pointcostmax": 8,"limit": 2},
+    {"name": "Iron Fang Uhlans","pointcostmin": 7,"pointcostmax": 11,"limit": 1},
+    {"name": "Kayazy Assassins","pointcostmin": 5,"pointcostmax": 8,"limit": 2},
+    {"name": "Kayazy Eliminators","pointcostmin": 3,"pointcostmax": null,"limit": 2},
+    {"name": "Kossite Woodsmen","pointcostmin": 4,"pointcostmax": 6,"limit": 2},
+    {"name": "Man-o-war Bombardiers","pointcostmin": 7,"pointcostmax": 11,"limit": 1},
+    {"name": "Man-o-war Demolition Corps","pointcostmin": 6,"pointcostmax": 9,"limit": 3},
+    {"name": "Man-o-war Shocktroopers","pointcostmin": 6,"pointcostmax": 9,"limit": 3},
+    {"name": "Widowmakers","pointcostmin": 4,"pointcostmax": null,"limit": 1},
+    {"name": "Winterguard Fieldgun Crew","pointcostmin": 2,"pointcostmax": null,"limit": 2},
+    {"name": "Winterguard Infantry","pointcostmin": 4,"pointcostmax": 6,"limit": 3},
+    {"name": "Winterguard Mortar Crew","pointcostmin": 3,"pointcostmax": null,"limit": 2},
+    {"name": "Winterguard Rifle Corps","pointcostmin": 5,"pointcostmax": 8,"limit": 3}
   ],
-
-  "solos": [
-    {
-      "name": "Fenris",
-      "pointcost": 5,
-      "limit": 1
-    },
-    {
-      "name": "Iron Fang Kovnik",
-      "pointcost": 2,
-      "limit": 2
-    }
+  "solos": [{"name": "Fenris","pointcost": 5,"limit": 1},
+    {"name": "Iron Fang Kovnik","pointcost": 2,"limit": 2},
+    {"name": "Koldun Lord","pointcost": 2,"limit": 1},
+    {"name": "Kovnik Andrei Malakov","pointcost": 3,"limit": 1},
+    {"name": "Kovnik Jozef Grigorovich","pointcost": 2,"limit": 1},
+    {"name": "Kovnik Markov","pointcost": 3,"limit": 1},
+    {"name": "Man-o-war Drakhun","pointcost": 5,"limit": 1},
+    {"name": "Man-o-war Kovnik","pointcost": 3,"limit": 2},
+    {"name": "Manhunter","pointcost": 2,"limit": 2},
+    {"name": "Wardog","pointcost": 1,"limit": 1},
+    {"name": "Widowmaker Marksman","pointcost": 2,"limit": 1},
+    {"name": "Yuri the Axe","pointcost": 3,"limit": 1}
+  ],
+  "attachments":[{"name": "Assault Kommando Flamethrower","pointcost": 1,"limit": 2},
+    {"name": "Battle Mechanik Officer","pointcost": 2,"limit": 2},
+    {"name": "Black Dragon Officer & Standard","pointcost": 2,"limit": 2},
+    {"name": "Greylord Escort","pointcost": 2,"limit": 1},
+    {"name": "Iron Fang Pikemen Officer & Standard","pointcost": 2,"limit": 1},
+    {"name": "Kayazy Assassin Underboss","pointcost": 2,"limit": 1},
+    {"name": "Koldun Kapitan Valachev","pointcost": 2,"limit": 1},
+    {"name": "Winterguard Inf. Officer & Standard","pointcost": 2,"limit": 1},
+    {"name": "Winterguard Inf. Rocketeer","pointcost": 1,"limit": 3}
   ]
 }

@@ -34,10 +34,13 @@ $("#commit").click(function() {
     var dataFile = $("#faction").html();
     $.getJSON("data/" + dataFile.toLowerCase() + ".json", function (data) {
         var items = [];
-        $.each(data, function (key, val) {
-            items.push("<td>" + val + "</td>");
+        $.each(data.warcaster, function (key, val) {
+            items.push("<tr><td>" + val.name + "</td><td>" + val.wjpoints + "</td></tr>");
         });
-        $("#armytab").appendTo(items);
+        for(i in items) {
+            console.log(items[i]);
+        }
+        $("#armytab").append(items);
     })
 });
 

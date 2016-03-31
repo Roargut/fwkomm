@@ -9,17 +9,29 @@
     <link href="css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
-<h1>Welcome to FW Comm</h1>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+            <ul class="nav navbar-nav">
+                <li role="presentation"><a href="index.html">Home</a></li>
+                <li role="presentation"><a href="newarmy.html">New Army</a></li>
+                <li role="presentation" class="active"><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-<ul class="nav nav-pills">
-    <li role="presentation"><a href="index.html">Home</a></li>
-    <li role="presentation"><a href="newarmy.html">New Army</a></li>
-    <li role="presentation" class="active"><a href="login.html">Login</a></li>
-</ul>
 
 <div class="container">
-
-
     <button type="button" class="btn btn-default" data-toggle="modal" data-target="#popupWindow">Open Login Window</button>
         <div class="modal fade" id="popupWindow" role="dialog">
             <div class="modal-dialog" role="document">

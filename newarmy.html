@@ -9,19 +9,32 @@
     <link href="css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
-<h1>Welcome to FW Comm</h1>
-
-<ul class="nav nav-pills">
-    <li role="presentation"><a href="index.html">Home</a></li>
-    <li role="presentation" class="active"><a href="newarmy.html">New Army</a></li>
-    <li role="presentation"><a href="login.html">Login</a></li>
-</ul>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+            <ul class="nav navbar-nav">
+                <li role="presentation"><a href="index.html">Home</a></li>
+                <li role="presentation" class="active"><a href="newarmy.html">New Army</a></li>
+                <li role="presentation"><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
 <div class="container">
     <button type="button" class="btn btn-default" data-toggle="modal" data-target="#popupWindow">new Army</button>
 </div>
 
-<div class="container" id="selection">
+<div class="container">
 
     <div class="modal fade" id="popupWindow" role="dialog">
         <div class="modal-dialog" role="document">
@@ -78,10 +91,17 @@
 </div>
 
 <div class="container" id="armytable">
-<ul id="armytab">
 
-</ul>
-
+    <div class="row">
+        <div class="col-md-6">
+            <table id="armytab">
+                <thead><td>Warcaster</td><td>WJ Points</td></thead>
+            </table>
+        </div>
+        <div class="col-md-6">
+            <table id="selection"></table>
+        </div>
+    </div>
 
 </div>
 
