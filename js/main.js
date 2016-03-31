@@ -3,6 +3,7 @@
  */
 const WMFACTIONS = ["Cryx", "Cygnar", "Khador", "Menoth", "Retribution", "Mercenaries", "Convergence"];
 const HOFACTIONS = ["Trollbloods", "Skorne", "Minions", "Circle", "Legion"];
+var armyPointSize="";
 
 
 $("#systemList li a").click(function() {
@@ -28,6 +29,7 @@ $("#systemList li a").click(function() {
 
 $("#pointlimitList li a").click(function(){
     $("#pointlimit").html($(this).text());
+    armyPointSize = $("#pointlimit").text();
 });
 
 $("#commit").click(function() {
@@ -54,6 +56,7 @@ $("#commit").click(function() {
         $("#warjackTab").append(itemWarjacks);
         $("#unitTab").append(itemUnits);
         $("#soloTab").append(itemSolos);
+        $("#pointsize").text(armyPointSize);
     })
 });
 
