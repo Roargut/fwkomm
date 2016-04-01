@@ -31,7 +31,7 @@
 </nav>
 
 <div class="container">
-    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#popupWindow">new Army</button>
+    <button id="newArmy" type="button" class="btn btn-default" data-toggle="modal" data-target="#popupWindow">new Army</button>
 </div>
 
 <div class="container">
@@ -90,19 +90,21 @@
     </div>
 </div>
 
-<div class="container" id="armytable">
+<div class="container">
 
     <div class="row">
         <div class="col-md-6">
-            <table class="table table-hover">
-                <thead><tr><th>Warcaster</th><th>WJ Points</th></tr></thead>
+            <table id="armytable" class="table table-hover">
+                <thead><tr><th>Warcaster</th><th>WJ Points</th><th>Limit</th><th><button id="hwc" class="btn-default">hide</button></th></tr></thead>
                 <tbody id="casterTab"></tbody>
-                <thead><tr><th>Warjack</th><th>Pointcost</th></tr></thead>
+                <thead><tr><th>Warjack</th><th>Pointcost</th><th>Limit</th><th><button id="hwj" class="btn-default">hide</button></th></tr></thead>
                 <tbody id="warjackTab"></tbody>
-                <thead><tr><th>Unit</th><th>Pointcost Min</th></tr></thead>
+                <thead><tr><th>Unit</th><th>Point Min</th><th>Point Max</th><th><button id="hun" class="btn-default">hide</button></th></tr></thead>
                 <tbody id="unitTab"></tbody>
-                <thead><tr><th>Solo</th><th>Pointcost</th></tr></thead>
+                <thead><tr><th>Solo</th><th>Pointcost</th><th>Limit</th><th><button id="hso" class="btn-default">hide</button></th></tr></thead>
                 <tbody id="soloTab"></tbody>
+                <thead><tr><th>Attachment</th><th>Pointcost</th><th>Limit</th><th><button id="hat" class="btn-default">hide</button></th></tr></thead>
+                <tbody id="attachmentTab"></tbody>
             </table>
         </div>
         <div class="col-md-6">
